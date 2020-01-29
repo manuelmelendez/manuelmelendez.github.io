@@ -109,39 +109,95 @@ figure {
 }
 
 .header a {
-  color: #1b2127;
+  color: white;
   text-decoration: none;
   height: 40px;
-  font-size: 2em;
-  text-decoration: underline;
-  margin-bottom: .5px;
+  font-size: 1.2em;
+/*   text-decoration: underline;
+ */  margin-bottom: .5px;
+ animation-duration: 0.75s;
+ animation-name: bounceIn;
+ animation-delay: 0.5s; 
+}
+ 
+ @keyframes bounceIn{
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+
+.bounceIn {
+  animation-duration: 0.75s;
+  animation-name: bounceIn;
+}
+}
+
+.header a:hover {
+  border-bottom: 1px solid white;
+  border-bottom-style: dashed;
 }
 
 .header .logo {
   padding-left: 8px;
-  padding-top: 20px;
+  padding-top: 10px;
+  transition: 1s;
+/*   animation-name: logoMM;
+ */  
+  animation-name: bounceIn;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
+/*animation-iteration-count: 2;*/
+/*   animation-direction: reverse;
+ */     /*border: solid 1px white;
+     border-style: dashed;
+ */  }
+@keyframes logoMM {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}  
+
+.logo:hover{
+  transform: skew(-45deg, -45deg);
 }
 
 .link {
   color:white
-}
-
-.menu {
-  position: fixed;
-  height: inherit;
-  background: rgba(255, 255, 255, 0.8);
-  z-index: 3;
-  top: 0;
-  left: -100vw;
-  transition: .3s;
-  width: 100vw;
-  /* height: 100vh; */
-  bottom: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  ;
 }
 
 .menu.is-active {
@@ -435,6 +491,28 @@ figure {
   .header .logo {
     text-align: center;
   }
+  .header a {
+    color: #1b2127;
+    height: 40px;
+    font-size: 2em;
+  }
+    .menu {
+    position: fixed;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    transition: .3s;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .portfolio {
     padding: 0;
   }
