@@ -5,8 +5,7 @@
 <style type="text/css">
 	.st0{fill:#1B2127;}
 	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
-	.st2{fill:#020202;stroke:#000000;stroke-miterlimit:10;}
-	.st3{fill:#020202;}
+	.st2{fill:#1B2127;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <title>logo</title>
 <g id="Capa_3">
@@ -56,7 +55,7 @@
 		L214.7,275.5c0,0-34.5,27.5-71.6,0l-104.9-128v95.4c0,0,14.1,20.9,25.6,0v-24.8l25.6,35.2c0,0-35.8,86.2-84.4,0v-197l53.7,61.3
 		L59.9,30L180.2,176.4z"/>
 	<path class="st2" d="M91.9,112.4v39.2l65.2,84.9c-0.6,0,21.7,20.9,42.2,0l65.2-82.3l1.2-43.1L180,215.5L91.9,112.4z"/>
-	<ellipse class="st3" cx="51.1" cy="242.3" rx="13.5" ry="14.4"/>
-	<ellipse class="st3" cx="308.1" cy="242.3" rx="13.5" ry="14.4"/>
+	<ellipse class="st0" cx="51.1" cy="242.3" rx="13.5" ry="14.4"/>
+	<ellipse class="st0" cx="308.1" cy="242.3" rx="13.5" ry="14.4"/>
 </g>
 </svg>
